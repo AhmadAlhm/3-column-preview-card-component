@@ -1,0 +1,91 @@
+/*-----------------------------------------------
+Global Styles
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image: url(design/desktop-design.jpg); */
+    background-size: contain;
+    position: relative;
+    
+}
+
+.container {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 855px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*-----------------------------------------------
+Card Styles
+-----------------------------------------------*/
+.container .card {
+    padding: 45px;
+    
+}
+.container .card:first-child {
+    background-color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%)
+}
+.container .card:last-child {
+    background-color: hsl(179, 100%, 13%)
+}
+
+.container .card h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 22px 0;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+.container .card p {
+    line-height: 1.55;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    word-spacing: -2.3px;
+    
+}
+.container .card a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding:15px;
+    margin-top: 75px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 42.5px;
+    text-align: center;
+    display: block;
+    width: 140px;
+}
+.container .card:first-child a {
+    color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(2) a {
+    color: hsl(184, 100%, 22%)
+}
+.container .card:last-child a {
+    color: hsl(179, 100%, 13%)
+}
+@media (max-width: 880px) {
+    .container {
+        width: 285px;
+        flex-direction: column;
+    }
+}
